@@ -11,4 +11,5 @@ const fs = require('fs'); // require fs for logging
        if (err) throw err;
      });
    }
+   exports.debug = debug;
  }
