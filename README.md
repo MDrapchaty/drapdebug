@@ -54,7 +54,7 @@ A log file will be created in your logs folder. Your detailed message will be ad
 
 ## Unit Testing ##
 
-drapdebug has been unit tested with [chai](https://www.npmjs.com/package/chai) and [mocha](https://www.npmjs.com/package/mocha) and comes with built in testing. Make sure these packages are installed locally to the project folder. To run tests on this package, download the [drapdebug](https://github.com/MDrapchaty/drapdebug) project folder from GitHub. Make sure [chai](https://www.npmjs.com/package/chai) and [mocha](https://www.npmjs.com/package/mocha) are installed to drapdebug project in your dependencies. Direct to the drapdebug project folder in your CLI.  
+drapdebug has been unit tested with [chai](https://www.npmjs.com/package/chai) and [mocha](https://www.npmjs.com/package/mocha) and comes with built in testing. Make sure these packages are installed locally to the project folder. To run tests on this package, download the [drapdebug](https://github.com/MDrapchaty/drapdebug) project folder from GitHub.Direct to the drapdebug project folder in your CLI. Make sure [chai](https://www.npmjs.com/package/chai) and [mocha](https://www.npmjs.com/package/mocha) are installed to drapdebug project in your dependencies.   
 
 To run tests use the follwing command in your CLI:
 `DEBUG=true mocha`
