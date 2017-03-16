@@ -3,7 +3,7 @@ A simple tool for [Nodejs](https://nodejs.org/en/) to help you debug your API Ap
 
 ## Install ##
 
-Using your npm in your CLI type:
+Using [drapdebug](https://www.npmjs.com/package/drapdebug) your npm in your CLI type:
 
 `npm install drapdebug`
 
