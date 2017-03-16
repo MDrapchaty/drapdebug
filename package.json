@@ -14,12 +14,11 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "mocha-sinon": "^1.1.6"
+    "eslint-plugin-react": "^6.10.0"
   },
   "dependencies": {
     "chai": "^3.5.0",
     "mocha-sinon": "^1.1.6",
-    "sinon": "^2.0.0"
+    "sinon": "^1.17.7"
   }
 }
