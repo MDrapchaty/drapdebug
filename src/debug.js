@@ -10,7 +10,7 @@ if (process.env.DEBUG === 'true') {  // if .env var DEBUG=true run function
     fs.appendFile('./logs/log.log', logMsg, (err) => {
       if (err) throw err;
     });
-     console.log('Log was added.');
+     console.log(msg);
    }
 
    exports.debug = debug;

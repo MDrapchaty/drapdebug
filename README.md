@@ -1,5 +1,5 @@
 # drapdebug #
-A simple tool for [Nodejs](https://nodejs.org/en/) to help you debug your API Application. Created by Matt Drapchaty
+A simple tool for [Nodejs](https://nodejs.org/en/) to help you debug your API Application, by recieving detailed debug messages in your console or to a log file. Created by Matt Drapchaty
 
 ## Install ##
 
@@ -23,7 +23,7 @@ The dependencies required can be found in the `package.json` folder, if you woul
 
 ### Create Log Folder ###
 
-Create a folder named `logs` in your root directory. This is where the log file will be created. Create a file named `.gitkeep` inside the logs folder you have just made in your root directory.( This will let Github know to add the logs file to your repo even though the folder is 'empty')
+If you would like to log all messages to a log file, create a folder named `logs` in your root directory. This is where the log file will be created. Create a file named `.gitkeep` inside the logs folder you have just made in your root directory.( This will let Github know to add the logs file to your repo even though the folder is 'empty')
 
 
 
@@ -46,7 +46,7 @@ Make sure you require `drapdebug` in your script:
 `var util = require('drapdebug');`
 
 drapdebug will allow you to insert a message you would like logged 
-You can then insert the debugger inside your API routes with a robust detailed message indicating success/fail, or whatever message you would like to be appended to your log file:
+You can then insert the debugger inside your API routes with a robust detailed message indicating success/fail, or whatever message you would like to display in console and/or be appended to your log file:
 
 `util.debug('Insert message you would like to log here.')`
 
