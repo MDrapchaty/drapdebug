@@ -1,5 +1,5 @@
 # drapdebug #
-A simple tool for [Nodejs](https://nodejs.org/en/) to help you debug your API Application, by recieving detailed debug messages in your console or to a log file. Created by Matt Drapchaty
+A simple tool for [Nodejs](https://nodejs.org/en/) to help you debug your API Application, by recieving detailed debug messages in your console. Created by Matt Drapchaty
 
 ## Install ##
 
@@ -21,12 +21,6 @@ The dependencies required can be found in the `package.json` folder, if you woul
     "sinon": "^1.17.7"
 ```
 
-### Create Log Folder ###
-
-If you would like to log all messages to a log file, create a folder named `logs` in your root directory. This is where the log file will be created. Create a file named `.gitkeep` inside the logs folder you have just made in your root directory.( This will let Github know to add the logs file to your repo even though the folder is 'empty')
-
-
-
 ### Usage ###
 
 In order to turn on the debug feature you must include the following Environmental Variable to your local project. You can do this by using your npm to install [dotenv](https://www.npmjs.com/package/dotenv):
@@ -45,12 +39,11 @@ Make sure you require `drapdebug` in your script:
 
 `var util = require('drapdebug');`
 
-drapdebug will allow you to insert a message you would like logged 
-You can then insert the debugger inside your API routes with a robust detailed message indicating success/fail, or whatever message you would like to display in console and/or be appended to your log file:
+drapdebug will allow you to insert a message you would like to log when a particular method/function/conditional is running. You can then insert the debugger inside your API routes with a robust detailed message indicating success/fail/etc in console:
 
 `util.debug('Insert message you would like to log here.')`
 
-A log file will be created in your logs folder. Your detailed message will be added to your log file along with a timestamp .
+A log will be displayed in your console.
 
 ## Unit Testing ##
 
