@@ -6,8 +6,21 @@ require('mocha-sinon');
 describe('Running Debugger Tests:', () => {
   beforeEach(function () {
     this.sinon.stub(console, 'log');
+    this.sinon.stub(console, 'error');
+    this.sinon.stub(console, 'warn');
   });
 
+  it('test for error has run', (done) => {
+    util.debug('Error');
+    expect(console.error.calledOnce).to.be.true;
+    done();
+  });
+
+  it('test for warn has run', (done) => {
+    util.debug('Warning!');
+    expect(console.warn.calledOnce).to.be.true;
+    done();
+  });
 
   it('All tests:', (done) => {
     util.debug('testing');
