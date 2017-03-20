@@ -4,7 +4,7 @@
   "description": "debug utility tool",
   "main": "src/debug.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Matt Drapchaty",
   "license": "ISC",
