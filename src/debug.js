@@ -10,20 +10,20 @@ colors.setTheme({
 
   // if .env var DEBUG=true run function
 // function for debug
-  function debug(msg) {
-    const date = new Date();
-    const logMsg = date + ', ' + msg + '\n\n';
-   	if (process.env.DEBUG === 'true') {
-      if (type == 'warn') {
+function debug(msg) {
+  const date = new Date();
+  const logMsg = date + ', ' + msg + '\n\n';
+  if (process.env.DEBUG === 'true') {
+    if (type == 'warn') {
       // Warnings
-        console.warn(colors.warn(msg));
+      console.warn(colors.warn(msg));
     } else if (type == 'error') {
       // Errors
-        console.error(colors.error(msg));
+      console.error(colors.error(msg));
     } else {
       // All other logs will be in green
-        console.log(colors.success(msg));
+      console.log(colors.success(msg));
     }
   }
 }
-   exports.debug = debug;
+exports.debug = debug;
