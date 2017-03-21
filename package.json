@@ -19,7 +19,10 @@
   "dependencies": {
     "chai": "^3.5.0",
     "colors": "^1.1.2",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.7.0",
     "mocha-sinon": "^1.1.6",
-    "sinon": "^1.17.7"
+    "sinon": "^1.17.7",
+    "yargs": "^7.0.2"
   }
 }
