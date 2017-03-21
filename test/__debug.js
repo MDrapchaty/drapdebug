@@ -12,20 +12,20 @@ describe('Running Debugger Tests:', () => {
 
   it('test for error has run', (done) => {
     /* eslint-disable no-unused-expressions */
-    util.debug('Error');
+    util.debug('Error', 'error');
     expect(console.error.calledOnce).to.be.true;
     done();
   });
 
   it('test for warn has run', (done) => {
     /* eslint-disable no-unused-expressions */
-    util.debug('Warning!');
+    util.debug('Warning!', 'warn');
     expect(console.warn.calledOnce).to.be.true;
     done();
   });
 
   it('All tests:', (done) => {
-    util.debug('testing');
+    util.debug('testing', 'log');
     /* eslint-disable no-unused-expressions */
     expect(console.log.calledOnce).to.be.true;
     done();
