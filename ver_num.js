@@ -14,8 +14,8 @@ if (argv.major) {
 
 gulp.task('bump', () => {
   gulp.src('./package.json')
-        .pipe(bump({
-      type: bumpVersion
-        }))
+    .pipe(bump({
+      type: bumpVersion,
+    }))
         .pipe(gulp.dest('./'));
 });
