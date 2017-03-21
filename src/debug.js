@@ -10,7 +10,7 @@ colors.setTheme({
 
   // if .env var DEBUG=true run function
 // function for debug
-function debug(msg) {
+function debug(msg, type) {
   const date = new Date();
   const logMsg = date + ', ' + msg + '\n\n';
   if (process.env.DEBUG === 'true') {

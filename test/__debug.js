@@ -25,7 +25,7 @@ describe('Running Debugger Tests:', () => {
   });
 
   it('All tests:', (done) => {
-    util.debug('testing');
+    util.debug('testing', 'log');
     /* eslint-disable no-unused-expressions */
     expect(console.log.calledOnce).to.be.true;
     done();
