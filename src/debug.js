@@ -1,4 +1,5 @@
 const colors = require('colors');
+require('../ver_num');
 
 colors.setTheme({
   success: 'green',
@@ -25,29 +26,28 @@ exports.debug = (msg, type) => {
 
 //
 exports.verBump = (currVer, bump) => {
-
   // Major index is verArr [0]
   // Minor index is verArr[1]
   // Patch index is verArr[2]
   const verArr = currVer.split('.');
 
-  for (let i in verArr) {
-    verArr[i] = parseInt(verArr[i]);
+  for (const i in verArr) {
+    verArr[i] = parseInt(verArr[i], 10);
   }
 
   if (bump === 'patch') {
     verArr[2] += 1; // patch index
-    console.log('Patch update, version: ',verArr[0],'.',verArr[1],'.',verArr[2]);
+    console.log('Patch update, version: ', verArr[0], '.', verArr[1], '.', verArr[2]);
   } else if (bump === 'minor') {
     verArr[2] = 0; // patch index
     verArr[1] += 1; // minor index
-    console.log('Minor update, version: ',verArr[0],'.',verArr[1],'.',verArr[2]);
+    console.log('Minor update, version: ', verArr[0], '.', verArr[1], '.', verArr[2]);
   } else if (bump === 'major') {
     verArr[2] = 0; // patch index
     verArr[1] = 0; // minor index
     verArr[0] += 1; // minor index
-    console.log('Major update, version: ',verArr[0],'.',verArr[1],'.',verArr[2]);
+    console.log('Major update, version: ', verArr[0], '.', verArr[1], '.', verArr[2]);
   }
 
   return verArr.join('.');
-}
+};
