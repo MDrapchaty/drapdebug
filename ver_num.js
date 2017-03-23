@@ -14,8 +14,12 @@ if (argv.major) {
 
 gulp.task('bump', () => {
   gulp.src('./package.json')
-    .pipe(bump({
-      type: bumpVersion,
-    }))
-        .pipe(gulp.dest('./'));
+    .pipe(bump({type: bumpVersion}))
+    .pipe(gulp.dest('./'))
+     .pipe(git.commit('bump version'))
+        // push local changes to repository 
+        .pipe(push({                      
+            repository: 'origin',
+            refspec: 'HEAD';
+        }));
 });
