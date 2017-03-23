@@ -1,25 +1,17 @@
 const gulp = require('gulp');
-const bump = require('gulp-bump');
+const git = require('gulp-git');
 const argv = require('yargs').argv;
 
-let bumpVersion = ' ';
+// Creating gulp tasks to add and commit to git
 
-if (argv.major) {
-  bumpVersion = 'major';
-} else if (argv.minor) {
-  bumpVersion = 'minor';
-} else {
-  bumpVersion = 'patch';
-}
+// Task for git add all 
+gulp.task('git add -A', () => {
+	return gulp.src('./ver_num.js')
+	  .pipe(git.add());
+});
 
-gulp.task('bump', () => {
-  gulp.src('./package.json')
-    .pipe(bump({type: bumpVersion}))
-    .pipe(gulp.dest('./'))
-     .pipe(git.commit('bump version'))
-        // push local changes to repository 
-        .pipe(push({                      
-            repository: 'origin',
-            refspec: 'HEAD';
-        }));
+// Task for git commit
+gulp.task('git commit -m', () => {
+  return gulp.src('./ver_num.js')
+    .pipe(git.commit('Version updated and commited'));
 });
