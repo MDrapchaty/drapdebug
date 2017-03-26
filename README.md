@@ -47,15 +47,15 @@ The first argument is the message you would like to log when this is called.The 
 
 ### Version Bumper ###
 
-There is also a built in Version Bumper, that will update your package with semantic versioning based on your input of the current version and `'patch'`, `'minor'`, or `'major'` based upon the changes made. It works just like the `debug` feature, but you will use it with `util.verBump` . This will automatically update your version and make a commit to Github. 
+There is also a built in Version Bumper, that will update your package with semantic versioning based on your input of the current version and `'patch'`, `'minor'`, or `'major'` based upon the changes made. It works just like the `debug` feature, but you will use it with `util.verBump` . This will automatically update your version and make a commit and push to Github. 
 
 ```const util = require('drapdebug');
 
 // Bump versions (patch, minor, major)
 
-util.verBump('2.0.0', 'patch');
-util.verBump('2.0.0', 'minor');
-util.verBump('2.0.0', 'major');
+util.verBump('2.0.1', 'patch');
+util.verBump('2.0.1', 'minor');
+util.verBump('2.0.1', 'major');
 ```
 
 ## Unit Testing ##
