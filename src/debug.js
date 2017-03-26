@@ -1,5 +1,5 @@
 const colors = require('colors');
-require('../ver_num');
+
 
 colors.setTheme({
   success: 'green',
