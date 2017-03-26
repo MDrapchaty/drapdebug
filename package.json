@@ -1,6 +1,6 @@
 {
   "name": "drapdebug",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "debug utility tool",
   "main": "src/debug.js",
   "scripts": {
